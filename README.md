@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🚀 Portfolio Website - Built with Next.js
 
-First, run the development server:
+This is a personal portfolio website built using **Next.js**, designed to showcase your work, skills, and projects. It's fast, responsive, and easy to maintain.
+
+## 📸 Demo
+
+[Live Site](https://your-portfolio-link.com)
+
+## ✨ Features
+
+- ⚡ Built with Next.js for performance and SEO
+- 🎨 Responsive design with modern UI/UX
+- 💼 Projects showcase with images, descriptions, and live links
+- 🧠 Skills section
+- 🧑‍💼 About Me section
+- 📫 Contact form (can be integrated with Formspree, EmailJS, or similar)
+- 🌙 Dark/Light theme toggle (optional)
+- 📱 Mobile-first design
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js (React)
+- **Styling:** Tailwind CSS / MUI / CSS Modules *(choose one)*
+- **Animations:** Framer Motion / AOS
+- **Deployment:** Vercel / Netlify
+
+## 📁 Folder Structure
+
+```
+
+.
+tanushree-tanushree/
+├── .gitignore
+├── components.json
+├── next.config.ts
+├── next-env.d.ts
+├── package.json
+├── package-lock.json
+├── postcss.config.mjs
+├── tailwind.config.ts
+├── tsconfig.json
+├── README.md
+├── public/
+├── src/
+│   ├── app/
+│   ├── assets/
+│   │   └── images/
+│   ├── components/
+│   │   └── ui/
+│   │       ├── About.tsx
+│   │       ├── Contact.tsx
+│   │       ├── ExperienceCard.tsx
+│   │       ├── Footer.tsx
+│   │       ├── ModeToggle.tsx
+│   │       ├── Navbar.tsx
+│   │       ├── Projects.tsx
+│   │       ├── SkillGrid.tsx
+│   │       └── theme-provider.tsx
+│   └── lib/
+
+
+````
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+````
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Start the development server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔧 Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Replace content in `/data` files (if used) or update components with your personal details.
+* Update images in `/public`
+* Customize the theme and layout as desired.
 
-## Learn More
+## 🧪 Build and Deployment
 
-To learn more about Next.js, take a look at the following resources:
+### Build for production:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Deploy on Vercel
 
-## Deploy on Vercel
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com), import your project, and deploy
+3. Done!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+### 🙌 Credits
+
+Built with ❤️ using [Next.js](https://nextjs.org/)
+
+```
+
+---
+
+Let me know if you want to add:
+- A blog section
+- Multilingual support
+- A testimonial section
+- Any specific dependency notes
+
+I can tailor it even further based on your portfolio’s structure.
+```
