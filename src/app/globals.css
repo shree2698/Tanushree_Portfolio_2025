@@ -1,0 +1,84 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Theme variables */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-cta: var(--cta);
+  --color-code-bg: var(--code-bg);
+  --color-code-yellow: var(--code-yellow);
+  --color-code-emerald: var(--code-emerald);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  /* You can add sidebar, border, ring etc if needed */
+}
+
+/* Light mode */
+:root {
+  --radius: 0.625rem;
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --accent: #0ea5e9;
+  --cta: #38bdf8;
+  --code-bg: #f1f5f9;
+  --code-yellow: #b45309;
+  --code-emerald: #059669;
+  --border: #e5e7eb; /* Tailwind slate-200 */
+  --ring: #3b82f6; /* Tailwind blue-500 */
+}
+
+/* Dark mode */
+.dark {
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --accent: #38bdf8;
+  --cta: #0ea5e9;
+  --code-bg: #1e293b;
+  --code-yellow: #facc15;
+  --code-emerald: #10b981;
+  --border: #475569; /* Tailwind slate-600 */
+  --ring: #38bdf8; /* Tailwind sky-400 */
+}
+
+/* Base styles */
+@layer base {
+  * {
+    border-color: var(--border);
+    outline-color: var(--ring);
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+  }
+}
+
+/* Text stroke examples */
+
+.text-stroke-white {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+.text-stroke-black {
+  -webkit-text-stroke: 1px black;
+  color: transparent;
+}
+
+.stroke-text {
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+}
+
+.dark .stroke-text {
+  -webkit-text-stroke: 2px white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
